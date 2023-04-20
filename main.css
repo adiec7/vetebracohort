@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body,html{
+    height: 100%;
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+.topnav{
+    background: red;
+    overflow: hidden;
+    
+}
+.topnav a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.2em;
+    padding: 14px 16px;
+    display: inline-block;
+    text-transform: capitalize;
+}
+.animate__fadeInLeft{
+    animation: bounce;
+        /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+}
+/* pseudo clases */
+.topnav a:hover{
+    background-color: yellow;
+    color: black;
+}
+a:active{
+    background-color: yellow;
+    color: whitesmoke;
+}
+/* hero image */
+section.hero-image{
+    background: linear-gradient( rgba(5, 8, 197,.3), rgba(12, 5, 206, 0.1)), url(./img/chicken-rice-3499129_1920.jpg);
+    /* background-image: url(./img/chicken-rice-3499129_1920.jpg); */
+    /* opacity: .7; */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    /* object-fit: cover; */
+}
+/* section.hero-image::before{
+    content: "";
+        display: block;
+        position: absolute;
+        top: 8%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+} */
+div.hero-text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: yellow;
+}
+.hero-text h1{
+    font-size: 2.5em;
+    text-transform: capitalize;
+}
+span{
+    color: red;
+}
+button.hero-button{
+    background-color: red;
+    border-radius: 2rem;
+    padding: 16px;
+    border-color: whitesmoke;
+    text-transform: capitalize;
+    color: whitesmoke;
+}
+button.hero-button:hover{
+    background-color: yellow;
+    color: black;
+}
+.description{
+    max-width: 80%;
+    text-align: center;
+    margin: auto;
+}
+p.tagline{
+    text-align: left;
+}
+
+ .row h2{
+   text-align: center;
+   text-transform: capitalize;
+}
+
+div.row{
+    text-align: center;
+    text-transform: capitalize;
+}
+div.column{
+    float: left;
+    width: 33.3%;
+
+}
+div.column img{
+    width: 100%;
+    height: auto;
+}
+/* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+footer {
+    background-color: red;
+    text-align: center;
+    margin-top: 0;
+    padding: 2rem;
+    max-width: 100%;
+    overflow: hidden;
+    color: yellow;
+}
+i.fa-brands{
+    color: yellow;
+}
+
+
+@media screen and (max-width: 700px) {
+    
+    .topnav a{
+        text-decoration: none;
+        color: whitesmoke;
+        font-size: 1rem;
+        padding: 12px 12px;
+        display: inline-block;
+        text-transform: capitalize;
+    }
+}
+
+
+
+
+
+
